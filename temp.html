@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+
+<h2 id="step"></h2>
+<input type="radio" name="server" onclick="Continue(Value = '[DK] Faggot | Fast DL', IP = '86.40.32.12')">Faggot Server
+<input type="radio" name="server" onclick="Continue(Value = 'WCS + 500 Races', IP = '43.32.12.3')">WCS Server
+<input type="dropdown-menu" value="noob" name="faggot" onselect="faggot">faggot
+
+<script>
+	var step = 1;
+	
+	
+	document.getElementById("step").innerHTML="Step 1";
+	
+	
+    function Continue(FindChoice, IP){
+	
+	if (FindChoice && IP != null){
+		 step = 2;
+		 document.getElementById("step").innerHTML="Step 2";
+		 document.getElementById("choice").innerHTML="Du har valgt " + FindChoice + " (" + IP + ")";
+		 step = 3
+		 
+		 		 
+	}
+	else {
+	
+		document.write("Syntax ERROR: onclick has no or missing values!");
+	}
+	if (step == 3){
+	 document.getElementById("link").innerHTML="Tryk her for at betale....";
+	
+	}
+
+	
+}
+
+</script>
+
+<h4 id="choice"></h4>
+
+<a id="link" href="http://www.faggot.com"></a>
+</html>
+
+
+

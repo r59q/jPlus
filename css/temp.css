@@ -1,0 +1,22 @@
+.jumbotron{
+    background:white;
+    text-align:center;
+}
+.form-control{
+    width:250px;
+    display:inline;
+}
+.orange{
+    color:#eea236;
+
+}
+.blue{
+    color:#2b669a;
+}
+.yellow{
+    color:#FBDB0C
+}
+.panel {
+    width: 500px;
+    text-align: center;
+}
