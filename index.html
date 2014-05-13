@@ -13,6 +13,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/temp.css" rel="stylesheet">
+	
 
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,7 +37,7 @@
 
                 <li class="dropdown">
                     <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i
-                            class="glyphicon glyphicon-user"></i> Admin <span class="caret"></span></a>
+                            class="glyphicon glyphicon-user"></i> Set <span class="caret"></span></a>
                     <ul id="g-account-menu" class="dropdown-menu" role="menu">
                         <li><a href="./Nocheat_files/Nocheat.htm">My Profile</a></li>
                     </ul>
@@ -62,18 +63,21 @@
                     <div class="controls">
 
 
+                                    <p><input type="text" id="username" name="username" oninput="validate_username()" class="form-control" placeholder="Brugernavn"></p>
 
-                                    <p>* <input type="text" id="username" name="username" oninput="validate_username()" class="form-control" placeholder="Brugernavn"></p>
+                                    <input type="password" id="password" name="password" oninput="validate_password()" class="form-control" placeholder="Kodeord">
 
-                                    <p>* <input type="password" id="password" name="password" oninput="validate_password()" class="form-control" placeholder="Kodeord"></p>
+                                    <p><input type="password" id="password_re" name="password_re" oninput="validate_password_re()" class="form-control" placeholder="Gentag kodeord"></p>
 
-                                    <p>* <input type="password" id="password_re" name="password_re" oninput="validate_password_re()" class="form-control" placeholder="Gentag kodeord"></p>
+                                    <p><input type="email" id="email" name="password" oninput="validate_email()" class="form-control" placeholder="Email Addresse""></p>
 
-                                    <p>* <input type="email" id="email" name="password" oninput="validate_email()" class="form-control" placeholder="Email Addresse""></p>
+                                    <p><input type="text" id="steamid" name="steamid" oninput="validate_steamid()" class="form-control"  placeholder="Steam ID"></p>
+									
 
-                                    <p>* <input type="text" id="steamid" name="steamid" oninput="validate_steamid()" class="form-control"  placeholder="Steam ID"></p>
+									<label><input type="checkbox" value="remember-me"> Få nyheder og opdateringer</label>
 
-                                    <p><button class="btn btn-lg btn-primary" onclick="dasd()" role="button">Register</button></p>
+
+                                    <p><button class="btn btn-lg btn-primary" onclick="dasd()" role="button">Tilmed mig!</button></p>
 
                     </div>
 
@@ -86,6 +90,7 @@
     </div>
 
 </div>
+
 
 <script>
 
